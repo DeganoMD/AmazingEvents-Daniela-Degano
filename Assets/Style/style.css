@@ -1,0 +1,51 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+    min-height: 100vh;
+    background-color: cornflowerblue;
+}
+
+header{
+height: 8vh;
+}
+
+.log{
+    width: 8rem;
+    
+}
+
+.letter{
+    color: black;
+}
+
+main{
+height: 89vh;
+
+}
+
+.banner1{
+    height: 40vh;
+    width: 60vw;
+    
+}
+
+.content-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+h1{
+    color: antiquewhite;
+}
+
+footer{
+height: 3vh;
+}
