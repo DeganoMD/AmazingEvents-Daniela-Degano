@@ -45,25 +45,25 @@
                 </div>
                 </nav>
         </header>
-        <main class="flex-grow-1 d-flex justify-content-center flex-column">
+        <main class="flex-grow-1 d-flex justify-content-center flex-column flex-wrap">
             <div class="carousel-main position-relative">
                 <h1 class="position-absolute top-50 start-50 translate-middle z-3">HOME</h1>
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./Assets/Image/optional_banner_1.jpg" class="d-block" alt="...">
+                            <img src="./Assets/Image/optional_banner_1.jpg" class="d-block w-100" alt="...">
                         </div>
                             <div class="carousel-item">
-                            <img src="./Assets/Image/optional_banner_2.jpg" class="d-block" alt="...">
+                            <img src="./Assets/Image/optional_banner_2.jpg" class="d-block w-100" alt="...">
                             </div>
                         <div class="carousel-item">
-                            <img src="./Assets/Image/optional_banner_3.jpg" class="d-block" alt="...">
+                            <img src="./Assets/Image/optional_banner_3.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./Assets/Image/optional_banner_4.jpg" class="d-block" alt="...">
+                            <img src="./Assets/Image/optional_banner_4.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./Assets/Image/optional_banner_5.jpg" class="d-block" alt="...">
+                            <img src="./Assets/Image/optional_banner_5.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -76,9 +76,16 @@
                     </button>
                 </div>
             </div>
-            <div id="sectionTarjet" class="d-flex flex-wrap mt-3 container-fluid gap-3 align-items-center justify-content-center">
-
-            </div>
+            <div class="d-flex flex-wrap mt-3 container-fluid gap-3 justify-content-around flex-lg-row">
+                <div id="listaDeCheckboxTerminadaIndex" class="d-flex flex-wrap mt-3 container-fluid gap-3 align-items-center justify-content-center"></div>
+                <div class="d-flex flex-wrap mt-3 container-fluid gap-3 align-items-end justify-content-end">
+                    <div class="input-group input-group-sm mb-3">
+                        <input type="text" id="buscadorIndex" class="form-control" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    </div>
+                </div>
+        </div>
+            <div id="sectionTarjet" class="d-flex flex-wrap mt-3 container-fluid gap-3 align-items-center justify-content-center"></div>
         </main>
         <footer class="container-fluid">
             <nav class="navbar bg-body-tertiary container navbar-expand-lg">
