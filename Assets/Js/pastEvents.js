@@ -18,7 +18,7 @@ function create(objet){
                 </div>
                 <div class="card-footer">
                 <p>Price:${objet.price}</p>
-                <a href="./../Page/details.html" class="btn btn-danger">Details</a>
+                <a href="./../Page/details.html?parametro=${objet._id}" class="btn btn-danger">Details</a>
             </div>
             </div>
         </div>

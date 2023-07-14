@@ -19,11 +19,11 @@ function crearCartaDeDetalles (cartaArmada, objetoId){
     <div class="card-body">
         <h1 class="card-title">${objetoId.name}</h1>
         <p class="card-text">${objetoId.description}</p>
-        <p class="card-text"><small class="text-body-secondary">${objetoId.date}</small></p>
-        <p class="card-text"><small class="text-body-secondary">${objetoId.place}</small></p>
-        <p class="card-text"><small class="text-body-secondary">${objetoId.capacity}</small></p>
-        <p class="card-text"><small class="text-body-secondary">${objetoId.assistance}</small></p>
-        <p class="card-text"><small class="text-body-secondary">${objetoId.price}</small></p>
+        <p class="card-text"><small class="text-body-secondary">Date: ${objetoId.date}</small></p>
+        <p class="card-text"><small class="text-body-secondary">Place: ${objetoId.place}</small></p>
+        <p class="card-text"><small class="text-body-secondary">Capacity: ${objetoId.capacity}</small></p>
+        <p class="card-text"><small class="text-body-secondary">Assistance: ${objetoId.assistance}</small></p>
+        <p class="card-text"><small class="text-body-secondary">Price: ${objetoId.price}</small></p>
     </div>
     </div>
 </div>
