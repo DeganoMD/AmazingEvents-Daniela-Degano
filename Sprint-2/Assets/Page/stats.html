@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="shortcut icon" href="../Image/favicon.png" type="image/x-icon">
+    <title>Home | Amazing Events</title>
+    
+</head>
+<body>
+    <div class="layout bg-dark text-white d-flex flex-column justify-content-center align-items-center container-fluid">
+        <header class="container-fluid">
+            <nav class="container navbar navbar-expand-lg bg-body-tertiary">
+                <div class="navColor container-fluid">
+                    <a class="navbar-brand" href="#">
+                    <img src="../Image/amazing_brand.png" class="logo rounded" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Page/upcomingEvents.html">Upcoming Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Page/pastEvents.html">Past Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Page/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Stats</a>
+                        </li>
+                    </ul>
+                </div>
+                    </div>
+                </div>
+                </nav>
+        </header>
+        <main class="flex-grow-1 d-flex justify-content-center flex-wrap">
+            <div class="carousel-main position-relative">
+                <h1 class="position-absolute top-50 start-50 translate-middle z-3">STATS</h1>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../Image/optional_banner_1.jpg" class="d-block" alt="...">
+                        </div>
+                            <div class="carousel-item">
+                            <img src="../Image/optional_banner_2.jpg" class="d-block" alt="...">
+                            </div>
+                        <div class="carousel-item">
+                            <img src="../Image/optional_banner_3.jpg" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Image/optional_banner_4.jpg" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Image/optional_banner_5.jpg" class="d-block" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <section>
+                <div>
+                    <table id="tableP">
+                        <thead>
+                        <tr>
+                            <th scope="col">Events Statics</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Events with highest % of assistance</td>
+                            <td>Events with lowest % of assistance</td>
+                            <td>Events with larger capacity</td>
+                        </tr>
+                        <tr>
+                            <td id="primero"></td>
+                            <td id="segundo"></td>
+                            <td id="tercero"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table id="tableS">
+                        <thead>
+                        <tr>
+                            <th scope="col">Upcoming Events Statistic by Category</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>Categories</td>
+                            <td>Revenues</td>
+                            <td>Percentage of assistence</td>
+                        </tr>
+                        <tr>
+                            <td id="primero"></td>
+                            <td id="segundo"></td>
+                            <td id="tercero"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div><table id="tableT">
+                    <thead>
+                    <tr>
+                        <th scope="col">Past Events Statistic by Category</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Categories</td>
+                        <td>Revenues</td>
+                        <td>Percentage of assistence</td>
+                    </tr>
+                    <tr>
+                        <td id="primero"></td>
+                            <td id="segundo"></td>
+                            <td id="tercero"></td>
+                    </tr>
+                    </tbody>
+                </table> </div>        
+            </section>
+        </main>
+        <footer class="container-fluid">
+            <nav class="navbar bg-body-tertiary container navbar-expand-lg">
+                <div class=" navColor container-fluid">
+                <div class="justify-content-start">
+                    <a class="navbar-brand" href="#">
+                    <img src="../Image/whatsapp.png" alt="" width="30" height="24">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                    <img src="../Image/instagram.png" alt="" width="30" height="24">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                    <img src="../Image/facebook.png" alt="" width="30" height="24">
+                    </a>
+                </div>
+                </div>
+                <h6>Cohort</h6>
+            </nav>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script type="module" src="./../Js/stats.js"></script>
+</body>
+</html>

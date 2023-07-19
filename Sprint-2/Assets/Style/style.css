@@ -1,0 +1,55 @@
+:root{
+--grey: #E8F3D6;
+--beige: #FCF9BE;
+--yellow: #FFDCA9;
+--peach: #FAAB78;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout{
+    min-height: 100vh;
+}
+
+.logo{
+    width: 6rem;
+}
+
+.navColor{
+background-color: var(--yellow);
+}
+
+.carousel-main{
+    height: 40vh;
+}
+
+.carousel-main img {
+    width: 86vw;
+    height: 40vh;
+    object-fit: cover;
+    object-position: 0% 40%;
+}
+
+h1{
+font-size: 900;
+font-weight: bolder;
+color:#E8F3D6;
+}
+
+.card{
+    width: 30rem;
+    height: 30rem;
+}
+
+.card-img-top{
+    height: 15rem;
+
+}
+
+.card-body{
+    height: 10rem;
+}
