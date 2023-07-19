@@ -1,12 +1,16 @@
-const eventosParaDetalles = data.events
 const parametro = location.search
 
 let carta = document.getElementById("detailsCard")
 let url = new URLSearchParams(parametro)
 let idUrl = url.get('parametro')
-let finder = data.events.find(dato => dato._id === idUrl)
-console.log(finder)
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let = eventosApi
+
+fetch("https://mindhub-xj03.onrender.com/api/amazing")
+.then (convertidor => convertidor.json())
+.then (informacion => { eventosApi = informacion.events
+
+let finder = eventosApi.events.find(informacion => informacion._id === idUrl)
 
 function crearCartaDeDetalles (cartaArmada, objetoId){
     cartaArmada.innerHTML += 
@@ -29,6 +33,9 @@ function crearCartaDeDetalles (cartaArmada, objetoId){
 </div>
 </div>`
 }
-crearCartaDeDetalles(carta, finder)
+crearCartaDeDetalles(carta, finder)})
+
+
+
 
 

@@ -77,36 +77,69 @@
                 </div>
             </div>
             <section>
-                <table class="table">
+                <div>
+                    <table id="tableP" class="table table-dark table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Events Statics</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Events with highest % of assistance</td>
+                            <td>Events with lowest % of assistance</td>
+                            <td>Events with larger capacity</td>
+                        </tr>
+                        <tr>
+                            <td id="primero"></td>
+                            <td id="segundo"></td>
+                            <td id="tercero"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table id="tableS" class="table table-dark table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Upcoming Events Statistic by Category</th>
+                        </tr>
+                        </thead>
+                        <tbody >
+                            <tr>
+                            <td>Categories</td>
+                            <td>Revenues</td>
+                            <td>Percentage of assistence</td>
+                        </tr>
+                        <tr>
+                            <td id="primeroDos"></td>
+                            <td id="segundoDos"></td>
+                            <td id="terceroDos"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table id="tableT" class="table table-dark table-striped">
                     <thead>
                     <tr>
-                        <th scope="col">Events Statics</th>
+                        <th scope="col">Past Events Statistic by Category</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>Events with highest % of assistance</td>
-                        <td>Events with lowest % of assistance</td>
-                        <td>Events with larger capacity</td>
-                    </tr>
-                        <tr>
-                        <th scope="col">Upcoming Events Statistic by Category</th>
-                        </tr>
-                        <tr>
                         <td>Categories</td>
                         <td>Revenues</td>
                         <td>Percentage of assistence</td>
                     </tr>
-                        <tr>
-                        <th scope="col">Past Events Statistic by Category</th>
-                        </tr>
-                        <tr>
-                        <td>Categories</td>
-                        <td>Revenues</td>
-                        <td>Percentage of assistence</td>
+                    <tr>
+                        <td id="primeroTres"></td>
+                            <td id="segundoTres"></td>
+                            <td id="terceroTres"></td>
                     </tr>
                     </tbody>
-                </table>
+                </table> 
+            </div>  
             </section>
         </main>
         <footer class="container-fluid">
@@ -131,5 +164,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+        <script src="./../Js/stats.js"></script>
 </body>
 </html>
