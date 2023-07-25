@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/style/style.css">
+    <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon">
+    <title>STATS | AMAZING EVENTS</title>
+</head>
+<body>
+    <div id="app" class="bg-dark container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="navColor container-fluid">
+                    <a class="navbar-brand" href="#">
+                    <img src="../image/amazing_brand.png" class="logo rounded" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/upComing.html">Upcoming Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/pastEvents.html">Past Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Stats</a>
+                        </li>
+                    </ul>
+                        </div>
+                    </div>
+                </div>
+                </nav>
+        </header>
+        <main class="flex-grow-1 d-flex justify-content-center flex-column flex-wrap w-100 p-2">
+            <table class="table table-dark table-striped">
+                <th> Event Stats </th>
+                <tr>
+                    <td>Events whith the hightest percentage of attendance</td>
+                    <td>Events whith the lowest percentage of attendance.</td>
+                    <td>Event with larger capacity</td>
+                </tr>
+                <tr>
+                    <td>{{porcentajeMayorNombre}} {{porcentajeMayor}}</td>
+                    <td>{{porcentajeMenorNombre}} {{porcentajeMenor}}</td>
+                    <td>{{eventoMayorCapacidad}} {{capacidadMayor}}</td>
+                </tr>
+            </table>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <th colspan="6">Past Events Stats </th>
+                    <tr>
+                    <td >Events whith the hightest percentage of attendance</td>
+                    <td >Events whith the lowest percentage of attendance.</td>
+                    <td >Event with larger capacity</td>
+                    </tr>
+                </thead>
+                <tbody>
+                <template v-if="nuevoArrayPasado.length > 0" v-for="evento of nuevoArrayPasado">
+                    <tr>
+                        <td>{{evento.category}}</td>
+                        <td>{{evento.revenue}}</td>
+                        <td>{{evento.porcAssist}}</td>
+                    </tr>
+                </template>
+                </tbody>
+            </table>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <th colspan="6">UpComing Events Stats </th>
+                    <tr>
+                    <td >Events whith the hightest percentage of attendance</td>
+                    <td >Events whith the lowest percentage of attendance.</td>
+                    <td >Event with larger capacity</td>
+                    </tr>
+                </thead>
+                <tbody>
+                <template v-if="nuevoArrayFuturo.length > 0" v-for="evento of nuevoArrayFuturo">
+                    <tr>
+                        <td>{{evento.category}}</td>
+                        <td>{{evento.revenue}}</td>
+                        <td>{{evento.porcAssist}}</td>
+                    </tr>
+                </template>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <div class="d-flex justify-content-between align-items-center navColor container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                    <img src="../image/whatsapp.png" alt="" width="30" height="24">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                    <img src="../image/instagram.png" alt="" width="30" height="24">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                    <img src="../image/facebook.png" alt="" width="30" height="24">
+                    </a>
+                </nav>
+                <h6>Cohort</h6>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/stats.js"></script>
+</body>
+</html>
