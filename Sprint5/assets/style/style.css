@@ -1,0 +1,83 @@
+:root{
+    --grey: #E8F3D6;
+    --beige: #FCF9BE;
+    --yellow: #FFDCA9;
+    --peach: #FAAB78;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+
+
+
+    main{
+        min-height: 80vh;
+    }
+    
+    .logo{
+        width: 6rem;
+    }
+    
+    .navColor{
+    background-color: var(--yellow);
+    }
+    
+    .carousel-main{
+        height: 40vh;
+    }
+    
+    .carousel-main img {
+        width: 86vw;
+        height: 40vh;
+        object-fit: cover;
+        object-position: 0% 40%;
+    }
+    
+    h1{
+    font-size: 900;
+    font-weight: bolder;
+    color:#E8F3D6;
+    }
+    
+    .card{
+        width: 30rem;
+        height: 30rem;
+    }
+    
+    .card-img-top{
+        height: 15rem;
+    }
+    
+    .card-body{
+        height: 10rem;
+    }
+
+    .listaDeCheckbox{
+        height: 5rem;
+    }
+
+    .button{
+        color:  #FCF9BE;
+        background-color:var(--peach) ;
+        transition: background-color;
+        border-color: #FAAB78;
+
+    }
+
+    .button:hover {
+        color: var(--peach);
+        background-color: rgb(47, 47, 47);
+        border-color:  rgb(30, 30, 30);
+    }
+
+    footer{
+        min-height: 5vh;
+    }

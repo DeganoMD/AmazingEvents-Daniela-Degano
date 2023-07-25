@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon">
+    <title>DETAILS | AMAZING EVENTS</title>
+</head>
+<body>
+    <div id="app" class="bg-dark container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="navColor container-fluid">
+                    <a class="navbar-brand" href="#">
+                    <img src="../image/amazing_brand.png" class="logo rounded" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/upComing.html">Upcoming Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/pastEvents.html">Past Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/stats.html">Stats</a>
+                        </li>
+                    </ul>
+                        </div>
+                    </div>
+                </div>
+                </nav>
+        </header>
+        <main class="flex-grow-1 d-flex justify-content-center flex-column flex-wrap w-100 p-2">
+            <div class="carousel-main position-relative w-100">
+                <h1 class="position-absolute top-50 start-50 translate-middle z-3">DETAILS</h1>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../image/optional_banner_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                            <div class="carousel-item">
+                            <img src="../image/optional_banner_2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        <div class="carousel-item">
+                            <img src="../image/optional_banner_3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../image/optional_banner_4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../image/optional_banner_5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div id="cards" class="d-flex flex-wrap mt-3 container-fluid gap-3 align-items-center justify-content-center">
+                <template v-if="arrayUnico">
+                <div class="card" style="width: 18rem;">
+                    <img :src="arrayUnico.image" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">{{arrayUnico.name}}</h5>
+                    <p class="card-text">{{arrayUnico.description}}  <br>
+                    Place: {{arrayUnico.place}} <br>
+                    Price: {{arrayUnico.price}} <br>
+                    Capacity: {{arrayUnico.capacity}} <br>
+                    Estimate: {{arrayUnico.estimate}}</p>
+                    </div>
+                </div>
+                </template>
+                <div v-else>
+                <h5>NON FOUND</h5>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="d-flex justify-content-between align-items-center navColor container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                    <img src="../image/whatsapp.png" alt="" width="30" height="24">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                    <img src="../image/instagram.png" alt="" width="30" height="24">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                    <img src="../image/facebook.png" alt="" width="30" height="24">
+                    </a>
+                </nav>
+                <h6>Cohort</h6>
+        </div>
+        </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/details.js"></script>
+</body>
+</html>
